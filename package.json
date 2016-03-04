@@ -1,0 +1,43 @@
+{
+  "name": "knockout-init",
+  "version": "1.0.0",
+  "description": "Module for initializing knockout observables",
+  "main": "dist/knockout-init.js",
+  "jsnext:main": "lib/knockout-init.js",
+  "scripts": {
+    "build": "mkdir -p dist && rollup -c",
+    "test": "eslint lib",
+    "prepublish": "npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronik-design/knockout-init.git"
+  },
+  "keywords": [
+    "knockout",
+    "binding",
+    "init",
+    "observables",
+    "variables",
+    "data"
+  ],
+  "author": {
+    "name": "Michael Shick (Ronik Design)",
+    "email": "contact@ronikdesign.com",
+    "url": "http://www.ronikdesign.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronik-design/knockout-init/issues"
+  },
+  "homepage": "https://github.com/ronik-design/knockout-init#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015-rollup": "^1.0.0",
+    "eslint": "^1.10.3",
+    "eslint-config-defaults": "^8.0.2",
+    "eslint-plugin-filenames": "^0.2.0",
+    "rollup": "^0.25.4",
+    "rollup-plugin-babel": "^2.4.0"
+  }
+}
